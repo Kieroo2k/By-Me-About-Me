@@ -1,0 +1,54 @@
+@use './colors' as colors;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: colors.$white;
+	background-color: colors.$bgc;
+	font-size: 2.4rem;
+}
+
+//header
+//nav
+
+nav {
+	ul {
+		padding-top: 2em;
+		position: absolute;
+		height: 100vh;
+		width: 35rem;
+		left: -35rem;
+		list-style: none;
+		background-color: colors.$white;
+		transition: transform 0.3s;
+	}
+	a {
+		display: block;
+		padding: 0.4em 1.2em;
+		color: #333;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	a:hover {
+		font-weight: bold;
+	}
+}
+.burger {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0.4em 0.8em;
+	font-size: 3.6rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: colors.$white;
+	transition: transform 0.3s;
+}
+
+.active {
+	transform: translateX(350px);
+}
+
+.hide {
+	display: none;
+}
