@@ -7,53 +7,100 @@ body {
 	font-size: 2.4rem;
 }
 
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
 //header
-//nav
+header {
+	//nav
+	.nav {
+		.nav-bar {
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			padding-top: 2em;
+			height: 100vh;
+			width: 25rem;
+			left: -25rem;
+			list-style: none;
+			background-color: colors.$white;
+			transition: transform 0.3s;
+		}
+		.burger {
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 0.4em 0.8em;
+			font-size: 3.6rem;
+			background: none;
+			border: none;
+			cursor: pointer;
+			color: colors.$white;
+			transition: transform 0.3s;
+		}
+		.active {
+			transform: translateX(25rem);
+		}
 
-.nav {
-	.nav-bar {
-		position: fixed;
-		display: flex;
-		flex-direction: column;
-		padding-top: 2em;
+		.hide {
+			display: none;
+		}
+		.navbar-brand {
+			align-self: center;
+			font-size: 4.8rem;
+			color: colors.$main;
+		}
+		.nav-link {
+			padding: 0.4em 1.2em;
+			color: #333;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		.nav-link:hover {
+			color: colors.$main;
+		}
+	}
+
+	.header-bg {
+		position: relative;
 		height: 100vh;
-		width: 25rem;
-		left: -25rem;
-		list-style: none;
-		background-color: colors.$white;
-		transition: transform 0.3s;
-	}
-	.burger {
-		position: fixed;
-		top: 0;
-		left: 0;
-		padding: 0.4em 0.8em;
-		font-size: 3.6rem;
-		background: none;
-		border: none;
-		cursor: pointer;
-		color: colors.$white;
-		transition: transform 0.3s;
-	}
-	.active {
-		transform: translateX(25rem);
-	}
+		background-image: url(/img/background-small.jpg);
+		background-size: cover;
+		background-position: 60% 50%;
+		background-attachment: fixed;
+		z-index: -1;
 
-	.hide {
-		display: none;
+		.header-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -10;
+		}
+		.header-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+			padding: 2em;
+			text-align: center;
+			color: colors.$white;
+			font-size: 2rem;
+			z-index: 5;
+
+			::first-letter {
+				text-transform: uppercase;
+			}
+		}
 	}
-	.navbar-brand {
-		align-self: center;
-		font-size: 4.8rem;
-		color: colors.$main;
-	}
-	.nav-link {
-		padding: 0.4em 1.2em;
-		color: #333;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-	.nav-link:hover {
-		color: colors.$main;
-	}
+}
+
+.footer {
+	padding: 3em 1em;
+	border-top: 1px solid colors.$white;
+	text-align: center;
 }
