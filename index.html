@@ -22,77 +22,78 @@
             </button>
             <div class="nav-bar">
                 <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i></a>
-                <a href="#" class="nav-link"></a>
-                <a href="#" class="nav-link">it skills</a>
-                <a href="#" class="nav-link">contact</a>
+                <a href="#about-me" class="nav-link"><i class="fa-solid fa-file"></i> About me</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-keyboard"></i> skills</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> contact</a>
                 <a href="https://www.linkedin.com/in/bart%C5%82omiej-kulik-059915249/" target="_blank"
-                    class="nav-link">linked-in</a>
-                <a href="https://github.com/Kieroo2k" target="_blank" class="nav-link">github</a>
+                    class="nav-link"><i class="fa-brands fa-linkedin"></i> linked-in</a>
+                <a href="https://github.com/Kieroo2k" target="_blank" class="nav-link"><i
+                        class="fa-brands fa-github"></i> github</a>
             </div>
         </nav>
-            <div class="header-bg">
-                <div class="header-shadow"></div>
-                <div class="header-text">
-                    <h1 class="header-title">Hello</h1>
-                    <p class="header-para">let me show you something about me</p>
-                </div>
+        <div class="header-bg">
+            <div class="header-shadow"></div>
+            <div class="header-text">
+                <h1 class="header-title">hello <span class="header-span">{world}</span></h1>
+                <p class="header-para">let me show you something about me</p>
             </div>
+        </div>
 
     </header>
     <main>
-        <section class="it-skills">
+
+
+
+        <section id="about-me" class="about-me">
             <div class="wrapper">
-                <div class="it-skills-box">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                <div class="about-me-box">
+                    <h2 class="section-title">about me</h2>
+                    <p class="section-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, alias esse. Perferendis tenetur
+                        voluptates adipisci, sapiente laboriosam dolor consectetur sint exercitationem, beatae deserunt
+                        quibusdam sed ipsum cum corrupti dolorem reiciendis!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="skills">
+            <div class="wrapper">
+                <div class="skills-box">
+                    <h2 class="section-title">my skills</h2>
+                    <p class="section-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eaque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <div class="skills-box">
+                    <h2 class="section-title">contact</h2>
+                    <form class="contact-form">
+                        <div class="contact-box">
+                            <input type="text" class="contact-input" name="contact-name" required="">
+                            <label for="contact-name" class="contact-label">Name</label>
+                        </div>
+                        <div class="contact-box">
+                            <input type="text" class="contact-input" name="contact-mail" required="">
+                            <label for="contact-mail" class="contact-label">Email</label>
+                        </div>
+                        <div class="contact-box">
+                            <input type="text" class="contact-input" name="contact-subject" required="">
+                            <label for="contact-subject" class="contact-label">Subject</label>
+                        </div>
+                        <div class="contact-box">
+                            <textarea name="contact-msg" class="contact-textarea" required=""></textarea>
+                            <label for="contact-msg" class="contact-label">Your message</label>
+                        </div>
+                        <button class="contact-btn btn-special-animation" type="submit"
+                            name="contact-submit">Send</button>
+                    </form>
                 </div>
             </div>
         </section>

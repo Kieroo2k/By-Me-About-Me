@@ -28,6 +28,10 @@ header {
 			list-style: none;
 			background-color: colors.$white;
 			transition: transform 0.3s;
+
+			a:nth-child(2) {
+				color: colors.$main;
+			}
 		}
 		.burger {
 			position: fixed;
@@ -94,6 +98,9 @@ header {
 
 			::first-letter {
 				text-transform: uppercase;
+			}
+			.header-span {
+				color: colors.$main;
 			}
 		}
 	}
