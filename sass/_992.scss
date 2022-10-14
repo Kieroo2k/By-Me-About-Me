@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
 	//header
-	header {
+	.header {
 		//nav
 		.nav {
 			.nav-bar {
@@ -19,7 +19,11 @@
 				.navbar-brand {
 					position: absolute;
 					left: 1.5em;
+					margin-bottom: 0;
 					font-size: 6rem;
+				}
+				.nav-link {
+					font-size: 2rem;
 				}
 			}
 			.active {
@@ -29,7 +33,9 @@
 		.header-bg {
 			background-image: url(/img/background-big.jpg);
 			.header-text {
-				font-size: 2.4rem;
+				.header-title {
+					font-size: 6rem;
+				}
 			}
 		}
 	}
