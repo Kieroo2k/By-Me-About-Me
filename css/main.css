@@ -46,7 +46,7 @@ table {
 }
 
 :root {
-  scroll-padding-top: 90px;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -165,12 +165,17 @@ body {
 .main .section-text {
   padding: 0 1em;
 }
-.main .about-me {
-  min-height: 100vh;
-}
 .main .objectives {
-  padding-top: 1em;
-  background-color: rgb(88, 88, 88);
+  margin-top: 1em;
+}
+.main .objectives .objectives-bg {
+  position: relative;
+  background-image: url();
+  color: #f2f2f2;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
 }
 .main .objectives .section-title {
   padding-bottom: 0;
@@ -180,7 +185,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
 }
 .main .objectives .objectives-cards .objective-card {
   position: flex;

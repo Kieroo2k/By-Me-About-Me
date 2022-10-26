@@ -1,7 +1,7 @@
 @use './colors' as colors;
 
 :root {
-	scroll-padding-top: 90px;
+	scroll-padding-top: 80px;
 }
 
 body {
@@ -136,13 +136,18 @@ body {
 		padding: 0 1em;
 	}
 
-	.about-me {
-		min-height: 100vh;
-	}
-
 	.objectives {
-		padding-top: 1em;
-		background-color: colors.$bgc2;
+		margin-top: 1em;
+		// background-color: colors.$bgc2;
+		.objectives-bg{
+			position: relative;
+			background-image: url();
+			color: colors.$white;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			z-index: 0;
+		}
 		.section-title {
 			padding-bottom: 0;
 		}
@@ -151,7 +156,6 @@ body {
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			padding: 0.5em;
 			.objective-card {
 				position: flex;
 				width: 100%;
