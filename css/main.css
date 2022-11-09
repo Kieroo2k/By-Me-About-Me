@@ -113,7 +113,7 @@ body {
 .header .header-bg {
   position: relative;
   height: 100vh;
-  background-image: url(/img/background-small.jpg);
+  background-image: url(https://github.com/Kieroo2k/By-Me-About-Me/blob/main/img/Background-small.jpg?raw=true);
   background-size: cover;
   background-position: 60% 50%;
   background-attachment: fixed;
@@ -244,7 +244,7 @@ body {
     transform: none;
   }
   .header .header-bg {
-    background-image: url(/img/background-big.jpg);
+    background-image: url(https://github.com/Kieroo2k/By-Me-About-Me/blob/main/img/Background-big.jpg?raw=true);
   }
   .header .header-bg .header-text .header-title {
     font-size: 6rem;
